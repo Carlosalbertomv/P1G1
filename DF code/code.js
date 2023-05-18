@@ -45,3 +45,42 @@ function menorAyB() {
         }
     }
 }
+
+function obtenerDiv() {
+    var A = parseInt(prompt("Ingrese A", 10))
+    var B = parseInt(prompt("Ingrese B", 7))
+    var resultado=0
+    resultado=parseInt(A/B)
+    alert(resultado)
+}
+
+function obtenerMod() {
+    var A = parseInt(prompt("Ingrese A", 10))
+    var B = parseInt(prompt("Ingrese B", 7))
+    var resultado=0
+    resultado=parseInt(A%B)
+    alert(resultado)
+}
+
+function obtenerMod() {
+    var A = parseInt(prompt("Ingrese A", 10))
+    var B = parseInt(prompt("Ingrese B", 7))
+    var resultado=0
+    resultado=parseInt (A%B)
+    alert(resultado)
+}
+
+function mostrarDigN() {
+    var N = parseInt(prompt("Ingrese N", 9478324))
+    var dig = 0
+    while (N != 0) {
+        dig = parseInt (N % 10)
+        if (dig == 3){
+            alert("Existe el dig 3")
+        }
+        N = parseInt N ()
+    }
+    
+}
+
+
