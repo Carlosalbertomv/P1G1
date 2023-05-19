@@ -1,0 +1,18 @@
+table {
+    border:rgb(0, 129, 241) 5px solid;
+    width: 100%;
+    text-align: center;
+}
+
+td,
+th {
+    border:rgb(233, 0, 0) 3px solid
+}
+
+td {
+    width: 25%;
+}
+
+tr {
+    height: 50%;
+}
