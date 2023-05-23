@@ -78,7 +78,7 @@ function mostrarDigN() {
         if (dig == 3){
             alert("Existe el dig 3")
         }
-        N = parseInt N ()
+        N = parseInt  ()
     }
     
 }
@@ -118,13 +118,13 @@ function ifNormal() {
 
 function ifAbreviado() {
     var N = parseInt(prompt("Ingrese N"))
-       (N > 5) {
+       (N > 5) 
         N = 10
-    } else {
+    } 
         N = 1
         alert (N)
-    }
-}
+    
+
 /*
     var N = parseInt(prompt("Ingrese N", 9478324))
     var cantidad = 0
@@ -144,9 +144,48 @@ function obtenerCantidadDigN_FOR() {
     alert("digitos: " + cantidad)
 }
         
+    function NmultiploDeM() {
+        var N = parseInt(prompt("Ingrese N: ", 10))
+        var M = parseInt(prompt("Ingrese M: ", 5))
+
+        if ((N % M) == 0) {
+            alert(N + " es multiplo de " + M)
+        } else {
+            alert(N + " no es multiplo de " + M)
+        }
+    }
+
+function sumaDigMultiplos3deN() {
+    var N = parseInt(prompt("Ingrese N: ", 23462314))
+    var sum = 0
+    var dig = 0
+    while (N != 0) {
+        dig = parseInt(N % 10)
+        alert(dig)
+        if ((dig % 3) == 0) {
+            sum = sum + dig
+        } else {
+
+        }
+    }
+}
+
+function sumarNrosEntreAyB() {
+    var A = parseInt(prompt("Ingrese A: ", 3))
+    var B = parseInt(prompt("Ingrese B: ", 9))
+    var suma = 0
+
     
+} 
 
-
-
-
-
+function promedioNdeNotas() {
+    var N = parseInt(prompt("Ingrese N: ", 15))
+    var sumaNota = 0
+    var i = 0
+    while(N > i){
+        i = i + 1
+        var nota = parseInt(prompt("Ingrese Nota: ", 80))
+        sumaNota = sumaNota + nota
+    }
+    alert(sumaNota/N)
+}
