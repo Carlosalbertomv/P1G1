@@ -14,7 +14,10 @@
 
 <table>
     <tr>
-   <td colspan="4">RESULTADO</td>
+   <td colspan="4">
+    <input id="resultado"
+    type="text" placeholder="0" >
+   </td>
     </tr>
 
     <tr>
@@ -25,7 +28,7 @@
             <button onclick="potencia()">potencia</button>
         </td>
         <td>
-            <button onclick="MOD()">MOD</button>
+            <button onclick="borrar()">Borrar</button>
         </td>
         <td>
             <button onclick="dividir()">dividir</button>
@@ -34,17 +37,23 @@
 
 <tr>
     <td>
-        <button onclick="1()">1</button>
+        <button onclick="numero(1)">1</button>
     </td>
     <td>
-        <button onclick="2()">2</button>
+        <button onclick="numero(2)">2</button>
     </td>
-    <td>3</td>
-    <td>MULTIPLICAR</td>
+    <td>
+        <button onclick="numero(3)">3</button>
+    </td>
+    <td>
+        <button onclick="Multiplicar()">MULTIPLICAR</button>
+    </td>
 </tr>
 
 <tr>
-    <td>4</td>
+    <td>
+        <button onclick="numero(4)">4</button>
+    </td>
     <td>5</td>
     <td>6</td>
     <td>MENOS</td>
@@ -124,6 +133,8 @@
 <h2>16 .- calcular promedio de notas</h2>
 <button onclick="promedioNdeNotas()">calcular promedio</button>
 
+<h2>17 .- Obtener Nombre y edad</h2>
+<button onclick="obtenerNombreCompleto()">Obtener Nombre y edad</button>
 
 
 
