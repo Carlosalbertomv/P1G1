@@ -4,137 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="code.js"></script>
+    <script
+    type="text/javascript"
+    src="code.js"></script>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <title>Programación 1</title>
 </head>
 <body>
 
-<h1>Calculadora estandar</h1>
+    <h1>CALCULADORA ESTÁNDAR</h1>
+    <table border="1px">
+        <tr>
+            <td colspan="4">
+                <input id="resultado"
+                type="text" placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td><button onclick="factorial()">factorial</button></td>
+            <td><button onclick="potencia()">potencia</button></td>
+            <td><button onclick="borrar()">borrar</button></td>
+            <td><button onclick="dividir()">dividir</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="numero(7)">7</button></td>
+            <td><button onclick="numero(8)">8</button></td>
+            <td><button onclick="numero(9)">9</button></td>
+            <td><button onclick="multiplicar()">multiplicar</button></td>           
+        </tr>
+        <tr>
+            <td><button onclick="numero(4)">4</button></td>
+            <td><button onclick="numero(5)">5</button></td>
+            <td><button onclick="numero(6)">6</button></td>
+            <td><button onclick="restar()">restar</button></td>            
+        </tr>
+        <tr>
+            <td><button onclick="numero(1)">1</button></td>
+            <td><button onclick="numero(2)">2</button></td>
+            <td><button onclick="numero(3)">3</button></td>
+            <td><button onclick="sumar()">sumar</button></td>            
+        </tr>
+        <tr>
+            <td><button onclick="inverso()">+/-</button></td>
+            <td><button onclick="numero(0)">0</button></td>
+            <td><button onclick="MOD()">MOD</button></td>
+            <td><button onclick="igual()">igual</button></td>            
+        </tr>
+    </table>
 
-<table>
-    <tr>
-   <td colspan="4">
-    <input id="resultado"
-    type="text" placeholder="0" >
-   </td>
-    </tr>
+    <h1>carlos Alberto</h1>
+    <h2>1.- Determinar el valor del factorial de un número N</h2>
+    <button onclick="factorialN()">Factorial</button>
+    
+    <h2>2.- Dados A y B, determinar cuál es el mayor</h2>
+    <button onclick="mayorAyB()">Mayor A y B</button>
+    
+    <h2>3.- Dados A y B, determinar cuál es el menor</h2>
+    <button onclick="menorAyB()">Menor A y B</button>
+    
+    <h2>4.- Dado A y B, obtener el DIV</h2>
+    <button onclick="obtenerDiv()">DIV A y B</button>
+    
+    <h2>5.- Dado A y B, obtener el MOD</h2>
+    <button onclick="obtenerMod()">MOD A y B</button>
+    
+    <h2>6.- Retornar la cantidad de dígitos que tiene el número N</h2>
+    <button onclick="digitosN()">Número dígitos N</button>
+    
+    <h2>7.- Retornar los dígitos que tiene el número N</h2>
+    <button onclick="retornarDigitosN()">Retornar dígitos N</button>
+    
+    <h2>8.- Mostrar si existe el 3 en el número N</h2>
+    <button onclick="mostrarTres()">Mostrar 3</button>
+    
+    <h2>9.- Calcular el área y perímetro de un trapecio</h2>
+    <button onclick="areaPerimetroTrapecio()">Área y Perímetro Trapecio</button>
+    
+    <h2>10.- Determinar si N es par o impar</h2>
+    <button onclick="NParOImpar()">N par o impar</button>
+    
+    <h2>11.- IF normal</h2>
+    <button onclick="ifNormal()">IF Normal</button>
+    
+    <h2>12.- IF abreviado</h2>
+    <button onclick="ifAbreviado()">IF Abreviado</button>
+    
+    <h2>13.- Retornar la cantidad de dígitos que tiene el número N usando FOR</h2>
+    <button onclick="digitosNFOR()">Número dígitos N FOR</button>
+    
+    <h2>14.- Retornar dígitos impares de un número N</h2>
+    <button onclick="digitosImpares()">Dígitos impares</button>
+    
+    <h2>14.- Sumatoria del 1 al 10</h2>
+    <button onclick="sumatoria1a10()">Sumatoria</button>
+    
+    <h2>15.- Calcular el área y volumen de un cilindro</h2>
+    <button onclick="areaVolumenCilindro()">Área y Volumen Cilindro</button>
+    
+    <h2>15.- Retornar si un número es positivo, negativo o neutro</h2>
+    <button onclick="mostrarNumPosNeg()">Positivo, Negativo o Neutro</button>
+    
+    <h2>16.- Dado A y B, mostrar el número que sea menor</h2>
+    <button onclick="mostrarNumMenor()">Menor de A y B</button>
+    
+    <h2>17.- Determinar si N es mútiplo de M</h2>
+    <button onclick="NmultiploDeM()">N múltiplo de M</button>
+    
+    <h2>18.- Sumar todos los dígitos múltiplos de 3 de un número N</h2>
+    <button onclick="sumatoriaMultiplosTres()">Sumatoria Múltiplos de 3</button>
+    
+    <h2>19.- Sumar los números entre A y B incluidos A y B</h2>
+    <button onclick="sumAyBInclusivo()">Sumatoria entre A y B inclusivo</button>
+    
+    <h2>20.- Calcular el promedio de N notas</h2>
+    <button onclick="promedioNnotas()">Promedio N Notas</button>
+    
+    <h2>21.- Ejemplo de FUNCIÓN con return</h2>
+    <button onclick="funcionConReturn()">Función Return</button>
 
-    <tr>
-        <td>
-            <button onclick="factorial()">factorial</button>
-        </td>
-        <td>
-            <button onclick="potencia()">potencia</button>
-        </td>
-        <td>
-            <button onclick="borrar()">Borrar</button>
-        </td>
-        <td>
-            <button onclick="dividir()">dividir</button>
-        </td>
-    </tr>
-
-<tr>
-    <td>
-        <button onclick="numero(1)">1</button>
-    </td>
-    <td>
-        <button onclick="numero(2)">2</button>
-    </td>
-    <td>
-        <button onclick="numero(3)">3</button>
-    </td>
-    <td>
-        <button onclick="Multiplicar()">MULTIPLICAR</button>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <button onclick="numero(4)">4</button>
-    </td>
-    <td>5</td>
-    <td>6</td>
-    <td>MENOS</td>
-</tr>
-
-<tr>
-    <td>7</td>
-    <td>8</td>
-    <td>9</td>
-    <td>MAS</td>
-</tr>
+    <h2>22.- N  potencia de P </h2>
+    <button onclick="NpotenciaP()">potencia</button>
 
 
 
-</table>
-
-
-
-
-
-
-    <h1>CARLOS ALBERTO</h1>
-
-<h2>1.- Determinar el valor del factorial de un número N</h2>
-<button onclick="factorialN()" >Factorial</button>
-
-
-<h2>2.- Dado A y B determinar cual es el mayor</h2>
-<button onclick="mayorAyB()" >Mayor A y B</button>
-
-<h2>3 .- dado A y B obtener el DIV</h2>
-<button onclick="obtenerDiv()">Obtener el DIV</button>
-
-<h2>4 .- Dado A y B obtener el MOD</h2>
-<button onclick="obtenerMod()">Obtener el MOD</button>
-
-<h2>5 .- Retornar la cantidad de digitos de N</h2>
-<button onclick="obtner()">Obtener el MOD</button>
-
-<h2>6 .- Retornar la cantidad de digitos de N</h2>
-<button onclick="obtner()">Obtener el MOD</button>
-
-<h2>7 .-Mostrar si existe el dig 3 un numero N</h2>
-<button onclick="obtner()">Obtener el MOD</button>
-
-<h2>8 .- Calcular el area y el perimetro de un Trapecio</h2>
-<button onclick="calcularTrapecio()">
-    calcular el area y el perimetro de un Trapecio</button>
-
-    <h2>9 .- Determinar si N es par o impar</h2>
-<button onclick="determinarNesParImpar()">
-    Derterminar si N es par o impar
-</button>
-
-<h2>10 .- IF Normal</h2>
-<button onclick="ifNormal()">
-    IF Normal
-</button>
-
-<h2>11 .- IF Abreviado</h2>
-<button onclick="ifAbreviado()">
-    IF abreviado
-</button>
-
-<h2>12 .- Retornar la cantidad de digitos de N</h2>
-<button onclick="obtenerCantidadDigN_FOR()">Obtener cantidad</button>
-
-<h2>13.- Determinar  si N es multiplo de M</h2>
-<button onclick="NmultiploDeM()" >n es multiplo de m</button>
-
-<h2>14.- Sumar los dig multiples de 3 de un nro N</h2>
-<button onclick="sumaDigMultiplos3deN()" >Sumar los dig multiples de 3 de un nro N</button>
-
-<h2>15.- Sumar entre los numeros A Y B</h2>
-<button onclick="sumarNroEntreAyB()" >sumar los numeros entre A y B </button>
-
-<h2>16 .- calcular promedio de notas</h2>
-<button onclick="promedioNdeNotas()">calcular promedio</button>
-
-<h2>17 .- Obtener Nombre y edad</h2>
-<button onclick="obtenerNombreCompleto()">Obtener Nombre y edad</button>
 
 
 
