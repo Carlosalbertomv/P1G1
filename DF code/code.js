@@ -499,3 +499,111 @@ function NpotenciaPconParametros(N, P) {
     //alert(res)
 
 }
+
+function GetCharByPosition(){
+    var cadena = ("Ingrese una Cadena", "Hola mundo")
+    var pos = parseInt(prompt("Ingrese Posicion", 3))
+    var caracter = cadena[pos]
+    alert(caracter)
+}
+
+function JoinTwoString(){
+    var cadenaA = prompt("Ingrese una Cadena A", "Hola")
+    var cadenaB = prompt("Ingrese una Cadena B", "mundo")
+    var unir = cadenaA + cadenaB
+    alert(unir)
+}
+
+function GetFrecuencyOfChar(){
+    var cadena = prompt("Ingrese una Cadena", "Universidad Cumbre")
+    var longitudCad = cadena.length
+    var i = 0
+    var contar = 0
+    while (longitudCad > i) {
+        var caracter = cadena[i]
+        i++
+        if (caracter == 'a') {
+            contar = contar + 1
+        }
+        alert(caracter)
+    }
+    alert("La Frecuencia de 'a' es: " + contar)
+}
+
+function MyNameEnAscii(){
+    var var_C = String.fromCharCode(67);
+    var var_a = String.fromCharCode(97);
+    var var_r = String.fromCharCode(114);
+    var var_l = String.fromCharCode(108);
+    var var_o = String.fromCharCode(111);
+    var var_s = String.fromCharCode(115);
+    var var_ = String.fromCharCode(32);
+    var var_A = String.fromCharCode(65);
+    var var_l = String.fromCharCode(108);
+    var var_b = String.fromCharCode(98);
+    var var_e = String.fromCharCode(101);
+    var var_r = String.fromCharCode(114);
+    var var_t = String.fromCharCode(116);
+    var var_o = String.fromCharCode(111);
+    var var_ = String.fromCharCode(32);
+    var var_ = String.fromCharCode(32);
+    var var_ = String.fromCharCode(32);
+    var var_ = String.fromCharCode(32);
+    var var_ = String.fromCharCode(32);
+    var var_ = String.fromCharCode(32);
+    var var_ = String.fromCharCode(32);
+    
+    alert(var_C + var_a + var_r + var_l + var_o + var_s + var_ + var_A + var_l + var_b + var_e + var_r + var_t + var_o)
+}
+
+//mostrar el ABC
+function MostrarABC(){
+inicio = 97
+fin = 122
+while (fin >= inicio) {
+    var letra = String.fromCharCode(inicio);
+    alert(letra)
+    inicio++
+}
+}
+
+function contarVocales(){
+    var cadena = prompt("Ingrese una Cadena", "Universidad Cumbre")
+    var longitudCad = cadena.length
+    var i = 0
+    var contar = 0
+    while (longitudCad > i) {
+        var caracter = cadena[i]
+        i++
+        if (caracter == 'a' 
+        || caracter == 'e'
+        || caracter == 'i' 
+        || caracter == 'o' 
+        || caracter == 'u' 
+        || caracter == 'A' 
+        || caracter == 'E' 
+        || caracter == 'I' 
+        || caracter == 'O' 
+        || caracter == 'U') {
+            contar = contar + 1
+        }
+        //alert(caracter)
+    }
+    alert("La Frecuencia de 'a, e, i, o, u, A, E, I, O, U'es: " + contar)
+}
+
+function ContarPalabras(){
+    var cadena = prompt("Ingrese una Cadena", "Universidad Cumbre")
+    var longitudCad = cadena.length
+    var i = 0
+    var contar = 1
+    while (longitudCad > i) {
+        var caracter = cadena[i]
+        i++
+        if (caracter == ' ' ) {
+            contar = contar + 1
+        }
+        //alert(caracter)
+    }
+    alert("La Cantidad de la palabra es es: " + contar)
+}
