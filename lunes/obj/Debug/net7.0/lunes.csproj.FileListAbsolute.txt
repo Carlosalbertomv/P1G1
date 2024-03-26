@@ -1,0 +1,14 @@
+E:\UPC\lunes\obj\Debug\net7.0\lunes.GeneratedMSBuildEditorConfig.editorconfig
+E:\UPC\lunes\obj\Debug\net7.0\lunes.AssemblyInfoInputs.cache
+E:\UPC\lunes\obj\Debug\net7.0\lunes.AssemblyInfo.cs
+E:\UPC\lunes\obj\Debug\net7.0\lunes.csproj.CoreCompileInputs.cache
+E:\UPC\lunes\bin\Debug\net7.0\lunes.exe
+E:\UPC\lunes\bin\Debug\net7.0\lunes.deps.json
+E:\UPC\lunes\bin\Debug\net7.0\lunes.runtimeconfig.json
+E:\UPC\lunes\bin\Debug\net7.0\lunes.dll
+E:\UPC\lunes\bin\Debug\net7.0\lunes.pdb
+E:\UPC\lunes\obj\Debug\net7.0\lunes.dll
+E:\UPC\lunes\obj\Debug\net7.0\refint\lunes.dll
+E:\UPC\lunes\obj\Debug\net7.0\lunes.pdb
+E:\UPC\lunes\obj\Debug\net7.0\lunes.genruntimeconfig.cache
+E:\UPC\lunes\obj\Debug\net7.0\ref\lunes.dll
